@@ -41,7 +41,10 @@ body {
 #header:hover .sub {
     display: block;
 }
-#header:hover .sub_bg{display: block;}
+
+#header:hover .sub_bg {
+    display: block;
+}
 
 .sub_bg {
     width: 100%;
@@ -149,6 +152,7 @@ body {
     width: 1920px;
     margin: 0 auto;
     padding-top: 140px;
+    position: relative;
 }
 
 .img_slide {
@@ -156,21 +160,21 @@ body {
 
 }
 
-.live{
+.live {
     width: 1168px;
     margin: 0 auto;
 }
 
-.title{
+.title {
     margin: 30px auto 60px;
     font-size: 40px;
 }
 
-.live_list{
+.live_list {
     margin-top: 30px;
 }
 
-.live_list li{
+.live_list li {
     width: 366px;
     height: 438px;
     float: left;
@@ -178,21 +182,134 @@ body {
     overflow: hidden;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
     /* border: 1px solid rgba(0, 0, 0, 0.3);; */
-    margin-bottom: 35px; ;
+    margin-bottom: 35px;
+    ;
 }
-.mid{
+
+.mid {
     margin: 0 30px;
 }
 
-.live_list li a{}
+.live_list li a {}
 
-.live_list li a .list_img{margin-bottom: 20px;}
+.live_list li a .list_img {
+    margin-bottom: 20px;
+}
 
-.live_list li a .list_img img{width: 100%;}
+.live_list li a .list_img img {
+    width: 100%;
+}
 
-.live_list li a h4{padding:  0 15px;}
+.live_list li a h4 {
+    padding: 0 15px;
+}
 
-.dot{
+.dot {
     text-align: center;
     margin: 0 0 30px;
+}
+
+/* footer영역 */
+
+#footer {
+    background-color: #292929;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.foot_inner {
+    width: 1168px;
+    margin: 0 auto;
+}
+
+.f_menu {
+    float: left;
+}
+
+.f_menu li {}
+
+.f_menu li a {
+    display: block;
+    padding: 5px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.f_menu li a.yellow {
+    color: yellow !important;
+}
+
+.info {
+    float: left;
+
+}
+
+.info li {
+    padding: 5px 0;
+    color: #aaa;
+    margin-left: 60px;
+}
+
+.sns {
+    float: right;
+}
+
+.sns li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.sns li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(/images/ico_sns.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    text-indent: -9999px;
+}
+
+li .sns_1 {}
+
+li.sns_2 a {
+    background-position: 0 -40px;
+}
+
+li.sns_3 a {
+    background-position: 0 -80px;
+}
+
+li.sns_4 a {
+    background-position: 0 -120px;
+}
+
+li.snleft{
+    width: 100px;
+    height: 80px;
+    background-image: url(/images/국가공인\ 정보통신접근성\ 품질인증마크.png) !important;
+    /* background-repeat: no-repeat; */
+    background-position: 0 0;
+    background-size: 100px;
+
+}
+
+/* top영역 */
+.top {
+    width: 120px;
+    height: 100%;
+    position: fixed;
+    border: 1px solid red;
+    top: 700px ;
+    left:calc(50% + (1168px / 2) + 50px) ;
+}
+
+.top a{
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+}
+.top .pos{
+    position: sticky;
+    top: 700px;
 }
